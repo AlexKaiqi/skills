@@ -1,0 +1,4 @@
+interface:
+  display_name: "问题拆解与模块设计"
+  short_description: "从需求推导模块边界，比较拆合的收益与成本，用场景和变化验证高内聚低耦合"
+  default_prompt: "用 $module-design 分解当前问题，按共同规则和私有知识推导责任边界，比较拆与不拆的实际收益和代价，用场景及变化检验，并在结构已足够时收敛。"
