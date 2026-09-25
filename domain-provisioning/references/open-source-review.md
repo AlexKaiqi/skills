@@ -8,7 +8,7 @@
 
 Cloudflare 的官方 [Skills 仓库](https://github.com/cloudflare/skills) 为 Cloudflare API MCP 与平台产品提供 Agent 指南，但没有发现覆盖“Registrar 购买 + DNS + Pages/Worker 主机名接入”完整生命周期的专用技能。官方托管 [Cloudflare API MCP](https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/) 用 `search()` 和 `execute()` 暴露 Cloudflare API，并支持 OAuth；这是账号操作的首选接入。账号操作要求相应 OAuth/API 权限。
 
-Vercel 的 [skills.sh](https://skills.sh/) 是开源 Agent Skills 目录与 CLI 生态入口。此仓库采用兼容的 `SKILL.md` 格式；发布 GitHub 后可用 `npx skills add AlexKaiqi/skills --skill domain-provisioning --full-depth` 安装该技能。这里使用 `--full-depth` 是因为技能目前放在仓库顶层独立目录。CLI 可把同一技能安装到多个兼容 Agent；技能已在自有仓库，不依赖发布到目录才可使用。
+Vercel 的 [skills.sh](https://skills.sh/) 是开源 Agent Skills 目录与 CLI 生态入口。此仓库采用兼容的 `SKILL.md` 格式；合并到默认分支后可用 `npx skills add AlexKaiqi/skills --skill domain-provisioning --full-depth --global` 安装该技能。这里使用 `--full-depth` 是因为技能目前放在仓库顶层独立目录。CLI 可把同一技能安装到多个兼容 Agent；技能已在自有仓库，不依赖发布到目录才可使用。
 
 ## 源码核对
 

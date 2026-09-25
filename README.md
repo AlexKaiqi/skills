@@ -11,7 +11,7 @@
 
 `npx skills add . --skill domain-provisioning --full-depth --global`
 
-在提示中选择要安装的 Agent；也可用 `--agent` 指定客户端。仓库推送后，可以从 GitHub 安装：
+在提示中选择要安装的 Agent；也可用 `--agent` 指定客户端。当前版本已推送到 `codex/domain-provisioning-skill` 分支；合并到默认分支后，可以从 GitHub 安装：
 
 `npx skills add AlexKaiqi/skills --skill domain-provisioning --full-depth --global`
 
