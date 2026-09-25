@@ -1,0 +1,12 @@
+interface:
+  display_name: "域名提供与管理"
+  short_description: "用 API 管理域名、DNS，以及 Pages/Worker 主机名"
+  default_prompt: "用 $domain-provisioning 注册 Cloudflare Registrar API 支持范围内最低价的可用域名并开启自动续费；成功后只返回完整域名。"
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "cloudflare-api"
+      description: "Cloudflare 官方 API MCP；通过 OAuth 操作 Registrar、DNS、Pages 和 Workers API。"
+      transport: "streamable_http"
+      url: "https://mcp.cloudflare.com/mcp"
